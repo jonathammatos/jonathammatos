@@ -1,20 +1,32 @@
-Olá, sou Jonathan Matos.<br>
-"Desenvolvedor Front-end | Autodidata | Entusiasta de tecnologia.<br>Amante de ficção científica, música e boas séries."
+<!-- ═══════════════════════════════════════════════════════════
+     jonathan.matos · front-end developer
+     ═══════════════════════════════════════════════════════════ -->
 
-#
-<div style="display: inline_block"><br>
-  <img align="center" alt="Jonny-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
-  <img align="center" alt="Jonny-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
-  <img align="center" alt="Jonny-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
-  <img align="center" alt="Jonny-Ts" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg">
-  <img align="center" alt="Jonny-React" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
-  <img align="center" alt="Jonny-Python" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg">
-  <img align="center" alt="Jonny-Csharp" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg">
-  
+<div align="center">
+
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=3000&pause=900&color=37F21B&center=true&vCenter=true&width=500&lines=%3E+dev+front-end_;%3E+autodidata_;%3E+apaixonado+por+tech_;%3E+sci-fi+%26+m%C3%BAsica_" alt="Typing SVG" />
+
+<h3>Jonathan Matos</h3>
+
+<img src="https://img.shields.io/badge/status-online-37f21b?style=flat-square&labelColor=000000" />
+<img src="https://img.shields.io/badge/dispon%C3%ADvel-CLT-37f21b?style=flat-square&labelColor=000000" />
+<img src="https://img.shields.io/badge/modalidade-remoto-37f21b?style=flat-square&labelColor=000000" />
+
 </div>
 
-#
-<a href = "mailto:jonathan2018.matos@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
-  <a href="https://www.linkedin.com/in/
-jonathan-matos-dev-frontend
-" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+---
+
+### `> sobre_mim`
+
+Sou **desenvolvedor front-end autodidata**, movido por curiosidade e paixão por construir interfaces que funcionam bonito. Aprendi na prática, na raça, e sigo estudando todos os dias — porque tecnologia é um campo que nunca para.
+
+Fora do código: **ficção científica**, **música** e **boas séries**. Acredito que a melhor forma de aprender é se cercar do que te inspira.
+
+```js
+const jonathan = {
+  cargo: "Desenvolvedor Front-End",
+  formação: "Ciência da Computação · UFAPE (em andamento)",
+  stack: ["HTML5", "CSS3", "JavaScript", "TypeScript", "React", "Bootstrap", "Sass"],
+  interesses: ["sci-fi", "música", "boas séries", "open source"],
+  disponibilidade: "CLT · Remoto"
+};
