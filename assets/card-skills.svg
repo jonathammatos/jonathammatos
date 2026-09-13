@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="220" viewBox="0 0 400 220">
+  <defs>
+    <style>
+      @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-8px); }
+      }
+      .float { animation: float 3s ease-in-out infinite; animation-delay: 0.6s; }
+      .title { fill: #37F21B; font-family: 'Fira Code', Consolas, monospace; font-weight: 700; font-size: 13px; letter-spacing: 1px; }
+      .text { fill: #F2F7F0; font-family: 'Fira Code', Consolas, monospace; font-size: 11px; }
+      .dim { fill: #8B9885; font-family: 'Fira Code', Consolas, monospace; font-size: 10px; letter-spacing: 0.5px; }
+    </style>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g class="float">
+    <rect x="8" y="8" width="384" height="204" rx="10" fill="#0D0D0D" stroke="#37F21B" stroke-width="1.5" filter="url(#glow)"/>
+    <text x="28" y="42" class="title">▸ SKILL_TRACKER</text>
+    <line x1="28" y1="52" x2="372" y2="52" stroke="#37F21B" stroke-opacity="0.25" stroke-width="1"/>
+    <text x="28" y="78" class="text">01 · HTML5 · CSS3 · Sass</text>
+    <text x="28" y="100" class="text">02 · JavaScript · TypeScript</text>
+    <text x="28" y="122" class="text">03 · React · Next.js</text>
+    <text x="28" y="144" class="text">04 · Bootstrap</text>
+    <text x="28" y="166" class="text">05 · Git · GitHub</text>
+    <text x="28" y="195" class="dim">SEMPRE APRENDENDO MAIS</text>
+  </g>
+</svg>
