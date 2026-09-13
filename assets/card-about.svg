@@ -1,32 +1,64 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="400" height="220" viewBox="0 0 400 220">
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="460" viewBox="0 0 640 460">
   <defs>
     <style>
-      @keyframes float {
-        0%, 100% { transform: translateY(0); }
-        50% { transform: translateY(-8px); }
-      }
-      .float { animation: float 3s ease-in-out infinite; }
-      .title { fill: #37F21B; font-family: 'Fira Code', Consolas, monospace; font-weight: 700; font-size: 13px; letter-spacing: 1px; }
-      .text { fill: #F2F7F0; font-family: 'Fira Code', Consolas, monospace; font-size: 11px; }
-      .dim { fill: #8B9885; font-family: 'Fira Code', Consolas, monospace; font-size: 10px; letter-spacing: 0.5px; }
+      .title   { fill:#BEF5A0; font-family:Consolas,monospace; font-weight:700; font-size:12px; letter-spacing:1.5px; }
+      .greet   { fill:#BEF5A0; font-family:Consolas,monospace; font-size:11px; letter-spacing:0.05em; }
+      .name    { fill:#F2F7F0; font-family:'Segoe UI',system-ui,sans-serif; font-weight:800; font-size:26px; letter-spacing:-0.03em; }
+      .name-ac { fill:#86FF3D; font-family:'Segoe UI',system-ui,sans-serif; font-weight:800; font-size:26px; letter-spacing:-0.03em; }
+      .role    { fill:#86FF3D; font-family:Consolas,monospace; font-size:11px; letter-spacing:0.5px; }
+      .bio     { fill:#F2F7F0; font-family:'Segoe UI',system-ui,sans-serif; font-size:12px; }
+      .bio-hl  { fill:#BEF5A0; font-family:'Segoe UI',system-ui,sans-serif; font-size:12px; font-weight:600; }
+      .meta    { fill:#8B9885; font-family:Consolas,monospace; font-size:10.5px; letter-spacing:0.03em; }
+      .init    { fill:#86FF3D; font-family:Consolas,monospace; font-weight:800; font-size:40px; }
     </style>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="2" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <radialGradient id="avglow">
+      <stop offset="0%" stop-color="#86FF3D" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#86FF3D" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cornerGlow">
+      <stop offset="0%" stop-color="#37F21B" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#37F21B" stop-opacity="0"/>
+    </radialGradient>
   </defs>
 
-  <g class="float">
-    <rect x="8" y="8" width="384" height="204" rx="10" fill="#0D0D0D" stroke="#37F21B" stroke-width="1.5" filter="url(#glow)"/>
-    <text x="28" y="42" class="title">▸ SOBRE_MIM</text>
-    <line x1="28" y1="52" x2="372" y2="52" stroke="#37F21B" stroke-opacity="0.25" stroke-width="1"/>
-    <text x="28" y="82" class="text">Desenvolvedor front-end autodidata,</text>
-    <text x="28" y="102" class="text">movido por curiosidade e paixão</text>
-    <text x="28" y="122" class="text">por construir interfaces bonitas.</text>
-    <text x="28" y="155" class="dim">FORA DO CÓDIGO</text>
-    <text x="28" y="178" class="text">sci-fi · música · boas séries</text>
-  </g>
+  <rect x="0" y="0" width="640" height="460" rx="20" fill="#1A2E1A"/>
+  <rect x="0" y="0" width="640" height="460" rx="20" fill="none" stroke="#86FF3D" stroke-opacity="0.3"/>
+
+  <circle cx="90" cy="90" r="140" fill="url(#cornerGlow)"/>
+
+  <text x="30" y="44" class="title">▸ SOBRE MIM</text>
+  <line x1="30" y1="56" x2="610" y2="56" stroke="#86FF3D" stroke-opacity="0.2"/>
+
+  <circle cx="135" cy="190" r="95" fill="url(#avglow)"/>
+  <circle cx="135" cy="190" r="66" fill="#050805" stroke="#86FF3D" stroke-width="2" filter="url(#glow)"/>
+  <text x="135" y="205" text-anchor="middle" class="init">JM</text>
+
+  <circle cx="135" cy="283" r="4" fill="#37F21B" filter="url(#glow)"/>
+  <text x="135" y="310" text-anchor="middle" class="meta">ONLINE</text>
+
+  <text x="240" y="122" class="greet">// Olá, visitante 👋</text>
+
+  <text x="240" y="158" class="name">Jonathan </text>
+  <text x="358" y="158" class="name-ac">Matos</text>
+
+  <text x="240" y="182" class="role">Desenvolvedor Full Stack · Cyberpunk Engineer</text>
+
+  <text x="240" y="216" class="bio">Construo </text>
+  <text x="307" y="216" class="bio-hl">experiências web rápidas,</text>
+  <text x="240" y="234" class="bio-hl">memoráveis</text>
+  <text x="321" y="234" class="bio"> e com personalidade. Apaixonado</text>
+  <text x="240" y="252" class="bio">por </text>
+  <text x="264" y="252" class="bio-hl">interfaces cyberpunk</text>
+  <text x="385" y="252" class="bio">, animações que respeitam</text>
+  <text x="240" y="270" class="bio">o usuário e código limpo.</text>
+  <text x="240" y="288" class="bio">Sempre aprendendo, sempre construindo.</text>
+
+  <line x1="30" y1="340" x2="610" y2="340" stroke="#86FF3D" stroke-opacity="0.15"/>
+
+  <text x="30" y="372" class="meta">◉ Brasil</text>
+  <text x="340" y="372" class="meta">◉ Desde 2020 no GitHub</text>
+
+  <text x="30" y="406" class="meta">◉ GMT-3 (Brasília)</text>
+  <text x="340" y="406" class="meta">◉ contato@jonathanmatos.dev</text>
 </svg>
