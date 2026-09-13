@@ -1,64 +1,45 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="640" height="460" viewBox="0 0 640 460">
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="260" viewBox="0 0 640 260">
   <defs>
     <style>
       .title   { fill:#BEF5A0; font-family:Consolas,monospace; font-weight:700; font-size:12px; letter-spacing:1.5px; }
-      .greet   { fill:#BEF5A0; font-family:Consolas,monospace; font-size:11px; letter-spacing:0.05em; }
-      .name    { fill:#F2F7F0; font-family:'Segoe UI',system-ui,sans-serif; font-weight:800; font-size:26px; letter-spacing:-0.03em; }
-      .name-ac { fill:#86FF3D; font-family:'Segoe UI',system-ui,sans-serif; font-weight:800; font-size:26px; letter-spacing:-0.03em; }
-      .role    { fill:#86FF3D; font-family:Consolas,monospace; font-size:11px; letter-spacing:0.5px; }
-      .bio     { fill:#F2F7F0; font-family:'Segoe UI',system-ui,sans-serif; font-size:12px; }
-      .bio-hl  { fill:#BEF5A0; font-family:'Segoe UI',system-ui,sans-serif; font-size:12px; font-weight:600; }
-      .meta    { fill:#8B9885; font-family:Consolas,monospace; font-size:10.5px; letter-spacing:0.03em; }
-      .init    { fill:#86FF3D; font-family:Consolas,monospace; font-weight:800; font-size:40px; }
+      .greet   { fill:#BEF5A0; font-family:Consolas,monospace; font-size:11px; }
+      .name    { fill:#F2F7F0; font-family:'Segoe UI',system-ui,sans-serif; font-weight:800; font-size:28px; letter-spacing:-0.03em; }
+      .name-ac { fill:#86FF3D; font-family:'Segoe UI',system-ui,sans-serif; font-weight:800; font-size:28px; letter-spacing:-0.03em; }
+      .role    { fill:#86FF3D; font-family:Consolas,monospace; font-size:12px; }
+      .bio     { fill:#F2F7F0; font-family:'Segoe UI',system-ui,sans-serif; font-size:12.5px; }
+      .bio-hl  { fill:#BEF5A0; font-family:'Segoe UI',system-ui,sans-serif; font-size:12.5px; font-weight:600; }
+      .meta    { fill:#8B9885; font-family:Consolas,monospace; font-size:10px; }
     </style>
-    <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-    <radialGradient id="avglow">
-      <stop offset="0%" stop-color="#86FF3D" stop-opacity="0.45"/>
-      <stop offset="100%" stop-color="#86FF3D" stop-opacity="0"/>
-    </radialGradient>
     <radialGradient id="cornerGlow">
       <stop offset="0%" stop-color="#37F21B" stop-opacity="0.22"/>
       <stop offset="100%" stop-color="#37F21B" stop-opacity="0"/>
     </radialGradient>
   </defs>
 
-  <rect x="0" y="0" width="640" height="460" rx="20" fill="#1A2E1A"/>
-  <rect x="0" y="0" width="640" height="460" rx="20" fill="none" stroke="#86FF3D" stroke-opacity="0.3"/>
+  <rect x="0" y="0" width="640" height="260" rx="20" fill="#1A2E1A"/>
+  <rect x="0" y="0" width="640" height="260" rx="20" fill="none" stroke="#86FF3D" stroke-opacity="0.3"/>
 
-  <circle cx="90" cy="90" r="140" fill="url(#cornerGlow)"/>
+  <circle cx="90" cy="60" r="140" fill="url(#cornerGlow)"/>
 
   <text x="30" y="44" class="title">▸ SOBRE MIM</text>
   <line x1="30" y1="56" x2="610" y2="56" stroke="#86FF3D" stroke-opacity="0.2"/>
 
-  <circle cx="135" cy="190" r="95" fill="url(#avglow)"/>
-  <circle cx="135" cy="190" r="66" fill="#050805" stroke="#86FF3D" stroke-width="2" filter="url(#glow)"/>
-  <text x="135" y="205" text-anchor="middle" class="init">JM</text>
+  <text x="30" y="98" class="greet">// Olá, visitante 👋</text>
 
-  <circle cx="135" cy="283" r="4" fill="#37F21B" filter="url(#glow)"/>
-  <text x="135" y="310" text-anchor="middle" class="meta">ONLINE</text>
+  <text x="30" y="142" class="name">Jonathan </text>
+  <text x="152" y="142" class="name-ac">Matos</text>
 
-  <text x="240" y="122" class="greet">// Olá, visitante 👋</text>
+  <text x="30" y="168" class="role">Desenvolvedor Front-End · Júnior</text>
 
-  <text x="240" y="158" class="name">Jonathan </text>
-  <text x="358" y="158" class="name-ac">Matos</text>
+  <text x="30" y="198" class="bio">Construo </text>
+  <text x="97" y="198" class="bio-hl">interfaces web modernas</text>
+  <text x="30" y="216" class="bio">Apaixonado por </text>
+  <text x="150" y="216" class="bio-hl">estética cyberpunk</text>
+  <text x="270" y="216" class="bio">e código limpo.</text>
 
-  <text x="240" y="182" class="role">Desenvolvedor Full Stack · Cyberpunk Engineer</text>
+  <line x1="30" y1="232" x2="610" y2="232" stroke="#86FF3D" stroke-opacity="0.15"/>
 
-  <text x="240" y="216" class="bio">Construo </text>
-  <text x="307" y="216" class="bio-hl">experiências web rápidas,</text>
-  <text x="240" y="234" class="bio-hl">memoráveis</text>
-  <text x="321" y="234" class="bio"> e com personalidade. Apaixonado</text>
-  <text x="240" y="252" class="bio">por </text>
-  <text x="264" y="252" class="bio-hl">interfaces cyberpunk</text>
-  <text x="385" y="252" class="bio">, animações que respeitam</text>
-  <text x="240" y="270" class="bio">o usuário e código limpo.</text>
-  <text x="240" y="288" class="bio">Sempre aprendendo, sempre construindo.</text>
-
-  <line x1="30" y1="340" x2="610" y2="340" stroke="#86FF3D" stroke-opacity="0.15"/>
-
-  <text x="30" y="372" class="meta">◉ Brasil</text>
-  <text x="340" y="372" class="meta">◉ Desde 2020 no GitHub</text>
-
-  <text x="30" y="406" class="meta">◉ GMT-3 (Brasília)</text>
-  <text x="340" y="406" class="meta">◉ contato@jonathanmatos.dev</text>
+  <text x="30" y="252" class="meta">◉ Brasil</text>
+  <text x="120" y="252" class="meta">◉ Disponível para CLT</text>
+  <text x="380" y="252" class="meta">◉ Cursando Ciência da Computação</text>
 </svg>
