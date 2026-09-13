@@ -1,31 +1,71 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="400" height="220" viewBox="0 0 400 220">
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="180" viewBox="0 0 640 180">
   <defs>
     <style>
-      @keyframes float {
-        0%, 100% { transform: translateY(0); }
-        50% { transform: translateY(-8px); }
-      }
-      .float { animation: float 3s ease-in-out infinite; animation-delay: 0.9s; }
-      .title { fill: #37F21B; font-family: 'Fira Code', Consolas, monospace; font-weight: 700; font-size: 13px; letter-spacing: 1px; }
-      .text { fill: #F2F7F0; font-family: 'Fira Code', Consolas, monospace; font-size: 11px; }
-      .dim { fill: #8B9885; font-family: 'Fira Code', Consolas, monospace; font-size: 10px; letter-spacing: 0.5px; }
+      .title { fill:#BEF5A0; font-family:Consolas,monospace; font-weight:700; font-size:12px; letter-spacing:1.5px; }
+      .lbl   { fill:#8B9885; font-family:Consolas,monospace; font-size:9px; letter-spacing:1.2px; }
+      .val   { fill:#F2F7F0; font-family:'Segoe UI',system-ui,sans-serif; font-size:10px; font-weight:500; }
     </style>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="2" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
+    <radialGradient id="cornerGlow">
+      <stop offset="0%" stop-color="#37F21B" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#37F21B" stop-opacity="0"/>
+    </radialGradient>
   </defs>
 
-  <g class="float">
-    <rect x="8" y="8" width="384" height="204" rx="10" fill="#0D0D0D" stroke="#37F21B" stroke-width="1.5" filter="url(#glow)"/>
-    <text x="28" y="42" class="title">▸ CONECTE-SE</text>
-    <line x1="28" y1="52" x2="372" y2="52" stroke="#37F21B" stroke-opacity="0.25" stroke-width="1"/>
-    <text x="28" y="85" class="text">gmail · jonathan2018.matos</text>
-    <text x="28" y="115" class="text">linkedin · jonathan-matos-dev</text>
-    <text x="28" y="145" class="text">discord · jonathan.matos</text>
-    <text x="28" y="182" class="dim">VAMOS CONSTRUIR ALGO JUNTOS</text>
-  </g>
+  <rect x="0" y="0" width="640" height="180" rx="20" fill="#1A2E1A"/>
+  <rect x="0" y="0" width="640" height="180" rx="20" fill="none" stroke="#86FF3D" stroke-opacity="0.3"/>
+
+  <circle cx="560" cy="140" r="100" fill="url(#cornerGlow)"/>
+
+  <text x="30" y="44" class="title">▸ CONECTE-SE COMIGO</text>
+  <line x1="30" y1="56" x2="610" y2="56" stroke="#86FF3D" stroke-opacity="0.2"/>
+
+  <!-- ═══ 4 cards idênticos · 136×90 cada · y: 70→160 · gap 12px ═══ -->
+  <!-- centers x: 98, 246, 394, 542 -->
+
+  <!-- GitHub -->
+  <a href="https://github.com/jonathanmatos">
+    <rect x="30" y="70" width="136" height="90" rx="12" fill="#0A0F0A" stroke="#86FF3D" stroke-opacity="0.25"/>
+    <g transform="translate(98,100) scale(0.55) translate(-24,-24)" fill="none" stroke="#86FF3D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M24,2.5a21.5,21.5,0,0,0-6.8,41.9c1.08.2,1.47-.46,1.47-1s0-1.86,0-3.65c-6,1.3-7.24-2.88-7.24-2.88A5.7,5.7,0,0,0,9,33.68c-1.95-1.33.15-1.31.15-1.31a4.52,4.52,0,0,1,3.29,2.22c1.92,3.29,5,2.34,6.26,1.79a4.61,4.61,0,0,1,1.37-2.88c-4.78-.54-9.8-2.38-9.8-10.62a8.29,8.29,0,0,1,2.22-5.77,7.68,7.68,0,0,1,.21-5.69s1.8-.58,5.91,2.2a20.46,20.46,0,0,1,10.76,0c4.11-2.78,5.91-2.2,5.91-2.2a7.74,7.74,0,0,1,.21,5.69,8.28,8.28,0,0,1,2.21,5.77c0,8.26-5,10.07-9.81,10.61a5.12,5.12,0,0,1,1.46,4c0,2.87,0,5.19,0,5.9s.39,1.24,1.48,1A21.5,21.5,0,0,0,24,2.5"/>
+    </g>
+    <text x="98" y="135" text-anchor="middle" class="lbl">GITHUB</text>
+    <text x="98" y="151" text-anchor="middle" class="val">@jonathanmatos</text>
+  </a>
+
+  <!-- LinkedIn -->
+  <a href="https://www.linkedin.com/in/jonathan-matos-dev-frontend/">
+    <rect x="178" y="70" width="136" height="90" rx="12" fill="#0A0F0A" stroke="#86FF3D" stroke-opacity="0.25"/>
+    <g transform="translate(246,100) scale(1.1) translate(-12,-12)" fill="#86FF3D">
+      <path d="M6.5 8C7.32843 8 8 7.32843 8 6.5C8 5.67157 7.32843 5 6.5 5C5.67157 5 5 5.67157 5 6.5C5 7.32843 5.67157 8 6.5 8Z"/>
+      <path d="M5 10C5 9.44772 5.44772 9 6 9H7C7.55228 9 8 9.44771 8 10V18C8 18.5523 7.55228 19 7 19H6C5.44772 19 5 18.5523 5 18V10Z"/>
+      <path d="M11 19H12C12.5523 19 13 18.5523 13 18V13.5C13 12 16 11 16 13V18.0004C16 18.5527 16.4477 19 17 19H18C18.5523 19 19 18.5523 19 18V12C19 10 17.5 9 15.5 9C13.5 9 13 10.5 13 10.5V10C13 9.44771 12.5523 9 12 9H11C10.4477 9 10 9.44772 10 10V18C10 18.5523 10.4477 19 11 19Z"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M20 1C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4C1 2.34315 2.34315 1 4 1H20ZM20 3C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20Z"/>
+    </g>
+    <text x="246" y="135" text-anchor="middle" class="lbl">LINKEDIN</text>
+    <text x="246" y="151" text-anchor="middle" class="val">jonathan-matos-dev</text>
+  </a>
+
+  <!-- Discord -->
+  <a href="https://discord.gg/svFkVd8VSZ">
+    <rect x="326" y="70" width="136" height="90" rx="12" fill="#0A0F0A" stroke="#86FF3D" stroke-opacity="0.25"/>
+    <g transform="translate(394,100) scale(0.55) translate(-24,-24)" fill="none" stroke="#86FF3D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M17.54,34.22A47.42,47.42,0,0,1,14.68,38C7.3,37.79,4.5,33,4.5,33A44.83,44.83,0,0,1,9.31,13.48,16.47,16.47,0,0,1,18.69,10l1,2.31"/>
+      <path d="M17.85,22.67a3.48,3.48,0,0,0-3.37,3.9,3.38,3.38,0,0,0,3.31,3.22,3.53,3.53,0,0,0,3.43-3.9A3.45,3.45,0,0,0,17.85,22.67Z"/>
+      <path d="M12.2,14.37a28.19,28.19,0,0,1,8.16-2.18A23.26,23.26,0,0,1,24,12a23.26,23.26,0,0,1,3.64.21,28.19,28.19,0,0,1,8.16,2.18m-7.47-2.09,1-2.31a16.47,16.47,0,0,1,9.38,3.51A44.83,44.83,0,0,1,43.5,33S40.7,37.79,33.32,38a47.42,47.42,0,0,1-2.86-3.81m6.46-2.9a29.63,29.63,0,0,1-8.64,3.49,21.25,21.25,0,0,1-4.28.4h0a21.25,21.25,0,0,1-4.28-.4,29.63,29.63,0,0,1-8.64-3.49"/>
+      <path d="M30.15,22.67a3.48,3.48,0,0,1,3.37,3.9,3.38,3.38,0,0,1-3.31,3.22,3.53,3.53,0,0,1-3.43-3.9A3.45,3.45,0,0,1,30.15,22.67Z"/>
+    </g>
+    <text x="394" y="135" text-anchor="middle" class="lbl">DISCORD</text>
+    <text x="394" y="151" text-anchor="middle" class="val">jonathan.matos</text>
+  </a>
+
+  <!-- Gmail -->
+  <a href="mailto:jonathan2018.matos@gmail.com">
+    <rect x="474" y="70" width="136" height="90" rx="12" fill="#0A0F0A" stroke="#86FF3D" stroke-opacity="0.25"/>
+    <g transform="translate(542,100) scale(0.78) translate(-16,-16)" fill="#86FF3D">
+      <path d="M32 6v20c0 1.135-0.865 2-2 2h-2v-18.151l-12 8.62-12-8.62v18.151h-2c-1.135 0-2-0.865-2-2v-20c0-0.568 0.214-1.068 0.573-1.422 0.359-0.365 0.859-0.578 1.427-0.578h0.667l13.333 9.667 13.333-9.667h0.667c0.568 0 1.068 0.214 1.427 0.578 0.359 0.354 0.573 0.854 0.573 1.422z"/>
+    </g>
+    <text x="542" y="135" text-anchor="middle" class="lbl">EMAIL</text>
+    <text x="542" y="151" text-anchor="middle" class="val">jonathan2018</text>
+  </a>
+
 </svg>
